@@ -1,7 +1,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy import text
 
-db_connection_string = "postgresql://postgres:6745@localhost:5432/QA homework"
+# Перед запуском подставить значения:
+# myuser - имя пользователя
+# mypassword - пароль
+# mydatabase - название БД
+db_connection_string = (
+    "postgresql://myuser:mrpassword@localhost:5432/mydatabase")
 db = create_engine(db_connection_string)
 
 
